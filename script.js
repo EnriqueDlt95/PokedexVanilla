@@ -80,7 +80,7 @@ searchBtn.addEventListener("click", (request) => {
             alert("Ensure you input a value!");
           } else {
                 let newPokemon = {};
-                getPokemon(inputSearch.value);
+                getPokemon(inputSearch.value.toLowerCase());
             }
 } );
 

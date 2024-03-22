@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap'); 
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background-color: #efefef;
+    opacity: 0.6;
+    background-image:  linear-gradient(30deg, #ff0000 12%, transparent 12.5%, transparent 87%, #ff0000 87.5%, #ff0000), linear-gradient(150deg, #ff0000 12%, transparent 12.5%, transparent 87%, #ff0000 87.5%, #ff0000), linear-gradient(30deg, #ff0000 12%, transparent 12.5%, transparent 87%, #ff0000 87.5%, #ff0000), linear-gradient(150deg, #ff0000 12%, transparent 12.5%, transparent 87%, #ff0000 87.5%, #ff0000), linear-gradient(60deg, #ff000077 25%, transparent 25.5%, transparent 75%, #ff000077 75%, #ff000077), linear-gradient(60deg, #ff000077 25%, transparent 25.5%, transparent 75%, #ff000077 75%, #ff000077);
+    background-size: 34px 60px;
+    background-position: 0 0, 0 0, 17px 30px, 17px 30px, 0 0, 17px 30px; */
+    
+    background-color: #000;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    /* declaring the display as Flex in body will make every direct children of the body will be a flex item */
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+h1{
+    font-family: 'Pokemon Solid', sans-serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+      
+
+.InputContainer {
+  width: 350px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom,rgb(150, 2, 0),rgb(52, 84, 209));
+  border-radius: 30px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
+  margin-bottom: 10px;
+}
+
+.input {
+  width: 340px;
+  height: 40px;
+  border: none;
+  outline: none;
+  caret-color: rgb(255, 81, 0);
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  padding-left: 15px;
+  letter-spacing: 0.8px;
+  color: rgb(19, 19, 19);
+  font-size: 13.4px;
+}
+
+  .container-button{
+      
+    margin-bottom: 20px;
+  }
+  .container-card-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20PX;
+    
+  }
+
+  .btn {
+    
+    position: relative;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em 2.5em;
+    display: inline-block;
+    border-radius: 6em;
+    transition: all .2s;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    color: black;
+    background-color: white;
+   }
+
+   
+   
+   .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+   }
+   
+   .btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+   }
+   
+   .btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+   }
+   
+   .btn::after {
+    background-color: #fff;
+   }
+   
+   .btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+   }
+   
+   .container-card-buttons .btn{
+    font-family: 'Pokemon Solid', sans-serif;
+    font-size: 35px;
+    color: #fff;
+    background: linear-gradient(-45deg, #960200 0%, #3454D1 100% );
+    
+    border-radius: 8px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 25px;
+    padding-right: 25px;
+    
+   }
+   
+   .container-card-buttons .btn::after {
+    border-radius: 8px;
+    
+  }
+
+  
+  /* @keyframes anim {
+    0%,
+    100% {
+      transform: translateY(calc(-50% - 5px)) scale(1);
+    }
+  
+    50% {
+      transform: translateY(calc(-50% - 5px)) scale(1.1);
+    }
+  } */
+
+  .card {
+    margin: 10px;
+  position: relative;
+  width: 490px;
+  height: 554px;
+  background-color: #101011;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+}
+.card img{
+    height: 350px;
+    width: 350px;
+    justify-content: center;
+}
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  left: -5px;
+  margin: auto;
+  width: 500px;
+  height: 564px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #960200 0%, #3454D1 100% );
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* .card::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #960200 0%, #3454D1 100% );
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+} */
+
+.name {
+  font-size: 30px;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+li{
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.card p:not(.name) {
+  font-size: 14px;
+}
+ul{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  
+  justify-content: space-between;
+ flex: 25%;
+ padding: 20px;
+}
+.card p:last-child {
+  color: #EFEFEF;
+  font-weight: 600;
+}
+
+/* .card:hover::after {
+  filter: blur(30px);
+}
+
+.card:hover::before {
+  transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+} */
+

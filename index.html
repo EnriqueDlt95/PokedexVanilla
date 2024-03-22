@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Pokédex</h1>
+      <div class="InputContainer">
+        <input
+          placeholder="Search your Pokemon.."
+          id="input"
+          class="input"
+          name="text"
+          type="text"
+        />
+      </div>
+      <div class="container-button">
+        <button class="btn" id="searchBtn">Search</button>
+      </div>
+      <div class="container-card-buttons">
+        <button class="btn" id="less"><</button>
+
+        <div class="card">
+          <img id="sprite" src="./assets/images/load.png" alt="" />
+          <p class="name" id="name">Loading</p>
+          <p id="id" class="id"></p>
+          <ul id="list"></ul>
+        </div>
+        <button class="btn" id="more">></button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

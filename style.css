@@ -17,7 +17,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     display: flex;
     /* declaring the display as Flex in body will make every direct children of the body will be a flex item */
-    align-items: center;
+    align-items: start;
     justify-content: center;
     min-height: 100vh;
     margin: 0;

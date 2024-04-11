@@ -169,7 +169,7 @@ h1{
     margin: 10px;
   position: relative;
   width: 490px;
-  height: 554px;
+  height: 100%;
   background-color: #101011;
   display: flex;
   flex-direction: column;
@@ -193,7 +193,7 @@ h1{
   left: -5px;
   margin: auto;
   width: 500px;
-  height: 564px;
+  height: 105%;
   border-radius: 10px;
   background: linear-gradient(-45deg, #960200 0%, #3454D1 100% );
   z-index: -10;
@@ -228,7 +228,7 @@ h1{
   text-transform: capitalize;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  
 }
 
 .card p:not(.name) {
@@ -239,7 +239,7 @@ ul{
   display: grid;
  grid-template-columns: 1fr 1fr; 
  grid-template-rows: 1fr 1fr;
- 
+ overflow: visible;
  justify-content: space-evenly;
  width: 100%;
  height: 100%;
